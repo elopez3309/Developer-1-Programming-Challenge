@@ -114,8 +114,8 @@ int main() {
 	for (int i = 0; i < size; i++)
 	{
 		output << setw(10) <<  mapCopy[i].word << " | ";
-
-		for (int i = 0; i < mapCopy[i].frequency; i++)
+		int temp = mapCopy[i].frequency;
+		for (int i = 0; i < temp; i++)
 		{
 			output << "=";
 		}
